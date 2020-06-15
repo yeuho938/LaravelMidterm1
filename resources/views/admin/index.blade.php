@@ -7,11 +7,14 @@
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 <body>
+		@include('header\head')
+	<center><h2>DANH SÁCH TOUR</h2></center>
+	<a href="/home" style="font-size: 19px; color: red;"> >>Trang home</a>
 	<div class="container">
 		<div class ="row">
 			<table class="table table-bordered">
 				<thead>
-					<tr>
+					<tr style="background-color: #FFE4B5">
 						<th scope="col">STT</th>
 						<th scope="col">Name</th>
 						<th scope="col">Image</th>

@@ -26,27 +26,41 @@
 			height: 44px
 		}
 		#menu a{
-			color: black;
+			color: grey;
 			font-family: bold;
 			font-size: 17px;
 		}
-		#menu #tc:hover {
-			color: red
+		#menu #ks:hover {
+			color: #ff0080;
+			background-color: white;
 		}
-		#menu #sp:hover {
-			color: red
+		#menu #dl:hover {
+			color: #ff0080;
+			background-color: white;
 		}
-		#menu #lh:hover {
-			color: red
+		#menu #vmb:hover {
+			color:#ff0080;
+			background-color: white;
 		}
-		#menu #ht:hover {
-			color: red
+		#menu #dv:hover {
+			color: #ff0080;
+			background-color: white;
 		}
-		
-		#lis button:hover{
-			background-color: crimson;
-			color: white;
-			border: 0px;
+		#menu #tx:hover {
+			color: #ff0080;
+			background-color: white;
+		}
+		#menu #tt:hover {
+			color: #ff0080;
+			background-color: white;
+		}
+		#menu #gt:hover {
+			color: #ff0080;
+			background-color: white;
+		}
+
+		.dropdown{
+			padding-top: 10px
 		}
 	</style>
 </head>
@@ -54,22 +68,22 @@
 	<div class="container-fluid" >
 		<div class="row" >
 			<center>
-				<nav class="navbar" style="background-color: #CDC9C9">
+				<nav class="navbar" style="background-color: white">
 					<ul class="nav navbar-nav" id="menu">
-						
-						<li class="dropdown"><a href="/home" id="tc"> DU LỊCH </a>
+						<li style="margin-left:-15%; margin-right: 70px" ><img src="https://nhanlucnganhluat.vn/uploads/images/5AE89AFC/logo/2019-03/logo-du-lich-viet-800x261.png" width="200px" height="80px"> </li>
+						<li class="dropdown"><a href="#" id="dl"> DU LỊCH </a>
 						</li>
-						<li class="dropdown"><a href="Home/gioithieu.php"> BOOK VÉ MÁY BAY</a>
+						<li class="dropdown"><a href="#" id="vmb"> BOOK VÉ MÁY BAY</a>
 						</li>
-						<li class="dropdown"><a href="#" id="sp"> BOOK KHÁCH SẠN</a>
+						<li class="dropdown"><a href="#" id="ks"> BOOK KHÁCH SẠN</a>
 						</li>
-						<li class="dropdown"><a href="Home/lienhe.php" id="lh">DỊCH VỤ VISA</a>								
+						<li class="dropdown"><a href="#" id="dv">DỊCH VỤ VISA</a>								
 						</li>
-						<li class="dropdown"><a href="#" id="ht"> THUÊ XE</a>
+						<li class="dropdown"><a href="#" id="tx"> THUÊ XE</a>
 						</li>						
-						<li class="dropdown"><a href="/admin/dashboard" id="ht"> TIN TỨC</a>
+						<li class="dropdown"><a href="#" id="tt"> TIN TỨC</a>
 						</li>	
-					    <li class="dropdown"><a href="/admin/dashboard" id="ht"> GIỚI THIỆU</a>
+						<li class="dropdown"><a href="#" id="gt"> GIỚI THIỆU</a>
 						</li>				
 					</ul>
 				</nav>
