@@ -20,35 +20,65 @@
   <center>
     <h1 style="color: red;"> Add new tour</h1>
     <div class="box">
-      <form class="form" method="POST" action="/books" enctype="multipart/form-data">
+      <form class="form" method="POST" action="/tour/insert" enctype="multipart/form-data">
        @csrf
+        @if ($errors->any())
+       <div class="alert alert-danger">
+        <ul>
+          @foreach ($errors->all() as $error)
+          <li>{{ $error }}</li>
+          @endforeach
+        </ul>
+      </div>
+      @endif
        <div class="form-group">
         <label for="title" style="float: left; font-size: 18px;"> Name</label>
         <input type="text" class="form-control" name = "name" placeholder="Name">
+         @error('name')
+        <div class="alert alert-danger">{{ $message }}</div>
+        @enderror 
       </div>
       <div class="form-group">
         <label for="name" style="float: left; font-size: 18px;"> Image</label>
         <input type="file" class="form-control" name = "image" placeholder="image">
+         @error('image')
+        <div class="alert alert-danger">{{ $message }}</div>
+        @enderror 
       </div>
       <div class="form-group">
         <label for="author" style="float: left; font-size: 18px;"> Typetour</label>
         <input type="text" class="form-control" name = "typetour" placeholder="typetour">
+         @error('typetour')
+        <div class="alert alert-danger">{{ $message }}</div>
+        @enderror 
       </div>
       <div class="form-group">
         <label for="author" style="float: left; font-size: 18px;"> Schedule</label>
         <input type="text" class="form-control" name = "schedule" placeholder="schedule">
+         @error('schedule')
+        <div class="alert alert-danger">{{ $message }}</div>
+        @enderror 
       </div>
       <div class="form-group">
         <label for="author" style="float: left; font-size: 18px;"> Depart</label>
         <input type="date" class="form-control" name = "depart" placeholder="Depart">
+         @error('depart')
+        <div class="alert alert-danger">{{ $message }}</div>
+        @enderror 
       </div>
       <div class="form-group">
-        <label for="author" style="float: left; font-size: 18px;"> Number peole</label>
-        <input type="text" class="form-control" name = "number_people" placeholder="Number people">
+        <label for="author" style="float: left; font-size: 18px;"> Number </label>
+        <input type="text" class="form-control" name = "number" placeholder="Number">
+         @error('number')
+        <div class="alert alert-danger">{{ $message }}</div>
+        @enderror 
       </div>
       <div class="form-group">
         <label for="author" style="float: left; font-size: 18px;"> Price</label>
         <input type="text" class="form-control" name = "price" placeholder="price">
+         @error('price')
+        <div class="alert alert-danger">{{ $message }}</div>
+        @enderror 
       </div>
       <button type="submit" class="btn btn-default" style=" font-size: 18px; color:green ;"> Add</button>
     </form>
